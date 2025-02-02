@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 def create_database():
     try:
@@ -22,9 +23,9 @@ def create_database():
             # Print success message
             print("Database 'alx_book_store' created successfully!")
 
-    except Exception as e:
+    except mysql.connector.Error as e:
         # Print error message if connection or query fails
-        print(f"Error: {e}")
+        print(f"MySQL Error: {e}")
 
     finally:
         # Close the cursor and connection
