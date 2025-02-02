@@ -1,6 +1,8 @@
 -- Switch to the alx_book_store database
 USE alx_book_store;
 
+SHOW TABLES;
+
 -- Create the authors table
 CREATE TABLE IF NOT EXISTS authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
