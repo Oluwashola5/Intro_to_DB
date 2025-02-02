@@ -38,3 +38,5 @@ book_id INT,
 FOREIGN KEY (book_id) REFERENCES Books (book_id),
 quantity DOUBLE
 );
+
+Select * from Order_Details
